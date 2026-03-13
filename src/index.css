@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Alice', serif;
+  }
+
+  body {
+    @apply bg-cream text-charcoal overflow-x-hidden;
+    font-family: 'Alice', serif;
+  }
+
+  ::selection {
+    @apply bg-blush text-charcoal;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-2xl md:text-3xl text-charcoal tracking-widest uppercase mb-2;
+    font-family: 'Alice', serif;
+    letter-spacing: 0.2em;
+  }
+
+  .section-divider {
+    @apply w-16 h-px bg-blush-dark mx-auto my-4;
+  }
+
+  .btn-primary {
+    @apply inline-block px-8 py-3 border border-charcoal text-charcoal tracking-widest uppercase text-xs
+           transition-all duration-500 hover:bg-charcoal hover:text-cream active:scale-95;
+    letter-spacing: 0.2em;
+  }
+
+  .btn-ghost {
+    @apply inline-block px-8 py-3 border border-cream text-cream tracking-widest uppercase text-xs
+           transition-all duration-500 hover:bg-cream hover:text-charcoal active:scale-95;
+    letter-spacing: 0.2em;
+  }
+
+  .card {
+    @apply bg-white/60 backdrop-blur-sm rounded-sm p-6 shadow-sm;
+  }
+
+  .ornament {
+    @apply text-blush-dark text-lg select-none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .writing-vertical {
+    writing-mode: vertical-rl;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F0EB;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4A090;
+  border-radius: 2px;
+}
+
+/* Smooth section transitions */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero always visible */
+section.hero-section {
+  opacity: 1;
+  transform: none;
+}
+
+/* Petal/confetti animation */
+@keyframes petal-fall {
+  0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+.petal {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  animation: petal-fall linear infinite;
+  will-change: transform;
+}
