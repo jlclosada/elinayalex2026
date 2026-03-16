@@ -25,12 +25,11 @@ export default function Contact() {
         transition={{ duration: 0.9 }}
         className="max-w-sm mx-auto text-center"
       >
-        <div className="text-4xl mb-5 select-none">💌</div>
         <h2 className="section-title">Contacto</h2>
         <div className="section-divider" />
 
         <p className="text-charcoal-light text-sm leading-7 mt-8 mb-10">
-          Para cualquier duda o pregunta, ¡no dudes en escribirnos!
+          Para cualquier duda o pregunta, ¡no dudéis en escribirnos!
         </p>
 
         <div className="space-y-6">

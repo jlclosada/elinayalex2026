@@ -10,7 +10,6 @@ export default function Dresscode() {
         transition={{ duration: 0.9 }}
         className="max-w-sm mx-auto text-center"
       >
-        <div className="text-4xl mb-5 select-none">👔</div>
         <h2 className="section-title">Dresscode</h2>
         <div className="section-divider" />
 
@@ -21,7 +20,9 @@ export default function Dresscode() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-charcoal-light text-sm leading-8 mt-8 text-balance"
         >
-          Formal. Queremos veros brillar. Traje para ellos y vestido largo o cocktail para ellas.
+          Formal. Queremos veros brillar.
+          <br />
+          Traje para ellos y vestido largo o cocktail para ellas.
         </motion.p>
 
         {/* Photo */}

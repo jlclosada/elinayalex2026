@@ -29,8 +29,9 @@ export default function Story() {
           style={{ fontFamily: 'Alice, serif' }}
         >
           Todo empezó entre clase y clase, donde además de aprender sobre alimentos y
-          macronutrientes, descubrimos que teníamos una química especial. Lo que empezó como una
-          gran amistad en la uni, acabó siendo lo que somos ahora.
+          macronutrientes, descubrimos que teníamos una química especial.
+          <br />
+          Lo que empezó como una gran amistad en la uni, acabó siendo lo que somos ahora.
         </motion.p>
 
         <motion.p
@@ -52,7 +53,7 @@ export default function Story() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-charcoal text-base mt-8 font-medium"
         >
-          ¡Te esperamos!
+          ¡Os esperamos!
         </motion.p>
 
         {/* CTA Button */}

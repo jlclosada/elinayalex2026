@@ -10,7 +10,6 @@ export default function Bus() {
         transition={{ duration: 0.9 }}
         className="max-w-sm mx-auto text-center"
       >
-        <div className="text-4xl mb-5 select-none">🚌</div>
         <h2 className="section-title">Bus</h2>
         <div className="section-divider" />
 

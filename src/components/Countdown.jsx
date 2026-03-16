@@ -66,7 +66,7 @@ export default function Countdown() {
         </p>
 
         {time.done ? (
-          <p className="text-2xl text-charcoal">¡Hoy es el gran día! 🎉</p>
+          <p className="text-2xl text-charcoal">¡Hoy es el gran día!</p>
         ) : (
           <div className="flex items-center justify-center gap-4 sm:gap-8">
             <TimeUnit value={time.days} label="días" />

@@ -21,7 +21,6 @@ export default function Gift() {
         transition={{ duration: 0.9 }}
         className="max-w-sm mx-auto text-center"
       >
-        <div className="text-4xl mb-5 select-none">🎁</div>
         <h2 className="section-title">Regalo</h2>
         <div className="section-divider" />
 
@@ -33,7 +32,7 @@ export default function Gift() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-charcoal-light text-sm leading-8 mt-8 text-balance"
         >
-          Para nosotros, el mejor regalo es que estés allí, compartiendo risas y momentos hasta el
+          Para nosotros, el mejor regalo es que estéis allí, compartiendo risas y momentos hasta el
           final de la fiesta. No necesitamos nada más para que este día sea perfecto.
         </motion.p>
 
@@ -44,7 +43,7 @@ export default function Gift() {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="text-charcoal-light text-sm leading-8 mt-5 text-balance"
         >
-          Sin embargo, como ya sabréis o si te acabas de enterar, ¡nos hemos comprado un piso!{' '}
+          Sin embargo, como ya sabréis o si os acabáis de enterar, ¡nos hemos comprado un piso!{' '}
           <span className="select-none">🥴</span> Así que, si de corazón queréis ayudarnos a que
           nuestra casa deje de tener eco, cualquier aportación será recibida con muchísima ilusión.
         </motion.p>

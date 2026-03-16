@@ -58,7 +58,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 1, ease: 'easeOut' }}
           className="text-cream/60 text-xs tracking-[0.25em] uppercase"
         >
-          Sant Andreu de Llavaneres · Barcelona
+          Sant Andreu de Llavaneres
         </motion.div>
 
         {/* Scroll indicator */}

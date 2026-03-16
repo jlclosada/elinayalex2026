@@ -68,8 +68,6 @@ export default function App() {
       <div id="contact">
         <Contact />
       </div>
-
-      <Footer />
     </div>
   )
 }
