@@ -53,10 +53,6 @@ export default function App() {
         <Location />
       </div>
 
-      <div id="bus">
-        <Bus />
-      </div>
-
       <div id="gift">
         <Gift />
       </div>
